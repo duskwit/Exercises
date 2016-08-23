@@ -1,0 +1,23 @@
+body{
+	font-family: Roboto 400;
+	font-size: 40px;
+	padding: 0;
+	margin: 0;
+}
+.main{
+	height: 100vh;
+	background-image: url('duck.JPG');
+	background-size:cover;
+	width: 100vw;
+	margin-top:0;
+	padding: 0;
+}
+.main p{
+	color:white;
+	font-family: Roboto;
+	font-weight: 600;
+	font-size: 80px;
+	text-align: center;
+	padding: 40vh;
+	margin:0;
+}

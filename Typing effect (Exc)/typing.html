@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Typing effect tutorial</title>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="typing.css" type="text/css">
+</head>
+
+<body>
+	<script src="jquery-3.1.0.js"></script>
+	<script src="typed.js"></script>
+	<script>
+  		$(function(){
+      	$("#typed_text").typed({
+        strings: ["Hello, I am Klaudia","and I want to become <br /> <i>junior front-end developer</i>", "Welcome to my <br /> website"],
+        typeSpeed: 30
+      });
+  	});
+	</script>
+
+	<div class="main">
+		<p id="typed_text"></p>
+	</div>
+</body>
+</html>
