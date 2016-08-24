@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl"> 
+
+<head>
+	<meta charset="utf-8">
+	<title>superstrona</title>
+	<style>
+	body{margin:0;
+		padding:0;
+		}
+	</style>
+</head>
+
+<body>
+<script>
+var my_canvas = document.createElement('canvas')
+my_canvas.width=1000;
+my_canvas.height=1000;
+document.body.appendChild(my_canvas);
+
+var ctx=my_canvas.getContext('2d');
+
+ctx.fillRect(30, 30, 100, 100);
+
+ctx.strokeRect(140, 30, 50, 50);
+
+ctx.clearRect(50, 50, 50, 50);
+
+ctx.beginPath();
+ctx.moveTo(30, 140);
+ctx.lineTo(100, 140);
+ctx.lineTo(60, 250);
+ctx.lineTo(10, 150);
+ctx.closePath();
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(300, 150, 100, Math.PI/8, Math.PI/2, true);
+ctx.fill();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(200, 250);
+ctx.bezierCurveTo(200, 100, 400, 400, 400, 250);
+ctx.stroke();
+ctx.closePath();
+
+ctx.beginPath();
+ctx.moveTo(40,300);
+ctx.lineTo(300,320);
+ctx.lineTo(400,380);
+ctx.bezierCurveTo(400,500, 60,500, 40,350);
+ctx.lineTo(40,300);
+
+ctx.moveTo(150,350);
+ctx.lineTo(175,400);
+ctx.lineTo(200,350);
+ctx.lineTo(150,350);
+
+ctx.fill();
+
+ctx.fillStyle='#84e8ee';
+ctx.fillRect(10,10,50,50);
+
+ctx.fillStyle='rgb(45,24,182)';
+ctx.fillRect(70,70,50,50);
+
+ctx.fillStyle='rgba(45, 24, 182, 0.5)';
+ctx.fillRect(90,95,50,50);
+
+ctx.strokeStyle='pink';
+ctx.strokeRect(100,120,50,50)
+
+ctx.strokeStyle='red';
+ctx.lineWidth=10;
+ctx.strokeRect(10,220,50,50)
+
+ctx.strokeStyle='red';
+ctx.lineWidth=10;
+ctx.lineJoin='round';
+ctx.strokeRect(80,220,50,50)
+
+var my_gradient = ctx.createLinearGradient(10,310,450,10)
+
+my_gradient.addColorStop(0, 'yellow');
+my_gradient.addColorStop(0.4, 'blue');
+my_gradient.addColorStop(1, 'pink');
+
+ctx.fillStyle = my_gradient;
+ctx.fillRect(400,400,500,500);
+
+</script>
+</body>
+
+</html>
