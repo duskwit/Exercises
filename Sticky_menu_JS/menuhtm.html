@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang='pl'>
+
+<head>
+	<meta charset="utf-8">
+	<link href="menu.css" rel="stylesheet" type="text/css"/>
+	<link href="css/fontello.css" rel="stylesheet" type="text/css"/>
+
+	<title>polskArchitektura</title>
+</head>
+<body>
+	<div class="wrapper">
+	<div class="header">
+		<div class="logo">polsk<span style="color: #c34f4f">Architektura</span></div>
+		<div class="nav">
+			<ol>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ARCHIWUM</a>
+					<ul>
+						<li><a href="#">lipiec</a></li>
+						<li><a href="#">sierpień</a></li>
+						<li><a href="#">wrzesień</a></li>
+					</ul>
+				</li>
+				<li><a href="#">KONTAKT</a></li>
+			</ol>
+
+		</div>
+		<div class="content">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et magna purus. Etiam ultrices neque in diam tincidunt, sed volutpat urna dictum. Nunc vehicula a orci et malesuada. Quisque vitae commodo neque. Suspendisse aliquam ut nibh quis pretium. Praesent congue molestie nisl, quis tincidunt augue gravida in. Duis eu erat et ligula posuere dapibus bibendum at elit. In hac habitasse platea dictumst. Suspendisse dolor nisl, laoreet semper mollis eget, bibendum quis eros. Mauris pharetra sit amet mi ac blandit.
+<br><br>
+Vivamus hendrerit tortor nec mi tristique pulvinar. Praesent vitae nibh laoreet, ultricies tortor eget, fringilla nunc. In hac habitasse platea dictumst. Curabitur ultricies ultrices risus quis lobortis. Donec a tortor turpis. Maecenas sit amet porttitor quam, non facilisis ante. Quisque nec ullamcorper erat. Proin aliquam libero suscipit lectus suscipit, sit amet convallis felis tincidunt. Pellentesque suscipit mollis arcu, quis vestibulum justo varius ac. Nulla id efficitur mi.
+<br><br>
+Fusce ac ante ullamcorper, tempus est tempus, aliquet dui. Nulla imperdiet metus sed quam interdum pulvinar. Mauris vulputate rhoncus velit, vitae viverra risus dignissim non. Suspendisse sollicitudin pellentesque nulla non dignissim. Nunc urna risus, pharetra vel nisl lobortis, tristique dictum est. Aliquam eget aliquet ex. Donec lobortis laoreet leo, ut facilisis est mattis elementum. Quisque at convallis nisi, porta tincidunt lectus. Vestibulum dictum dictum ultrices. Mauris pulvinar dolor lorem, eget ullamcorper felis scelerisque a. Pellentesque mattis consequat leo. Ut ac tortor sit amet dolor finibus bibendum. Cras feugiat tellus ut elit vestibulum, sed vulputate leo porta.
+<br><br>
+Sed pretium vehicula aliquam. Maecenas tristique varius ex, nec fringilla turpis euismod in. Ut lacinia nisi quis mollis scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi vitae dui sit amet arcu congue pulvinar ac at ante. Nunc a aliquet velit, euismod venenatis orci. Duis quis rhoncus nulla, at rhoncus odio. Duis libero erat, rutrum sit amet ante et, convallis interdum enim.
+<br><br>
+Duis lorem metus, interdum at dui nec, congue dignissim magna. Integer ut bibendum justo, in consectetur dui. Cras ut sem sollicitudin, sodales quam vitae, placerat risus. In sit amet urna id sem efficitur varius et venenatis elit. Nunc sagittis sagittis imperdiet. Etiam rutrum convallis justo, at porta erat eleifend faucibus. Donec ligula sapien, rutrum eu eleifend nec, egestas ut tellus. Sed sodales euismod mi sed tincidunt. Duis et libero eget lorem ultrices semper. In elementum augue in ipsum sagittis gravida. Vestibulum in velit sed enim semper vulputate. </div>
+	</div>
+	<div class="socials">
+		<div class="socialdivs">
+			<div class="fb"><i class="icon-facebook"></i></div>
+			<div class="yt"><i class="icon-youtube"></i></div>
+			<div class="tw"><i class="icon-twitter"></i></div>
+			<div class="gplus"><i class="icon-gplus"></i></div>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+	<div class="footer">polskArchitektura.pl 2015 &copy;</div>
+</div>
+<script src="jquery-1.11.3.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+   var stickyNavTop = $('.nav').offset().top;
+
+   var stickyNav = function(){
+   var scrollTop = $(window).scrollTop();
+
+   if (scrollTop > stickyNavTop) { 
+      $('.nav').addClass('sticky');
+   } else {
+      $('.nav').removeClass('sticky');
+    }
+   };
+
+   stickyNav();
+
+   $(window).scroll(function() {
+      stickyNav();
+   });
+   });
+
+</script>
+
+</body>
+</html>
