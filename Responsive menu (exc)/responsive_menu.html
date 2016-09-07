@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Responsive menu</title>
+<!-- CSS -->
+	<link rel="stylesheet" href="responsive_menu.css">
+<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>RESPONSIVE NAV EXC</h1>
+	</header>
+	<nav>
+		<ul class=" ">
+			<a href="#"><li>Home</li></a>
+			<a href="#"><li>About me</li></a>
+			<a href="#"><li>Star Wars</li></a>
+			<a href="#"><li>Shop</li></a>
+			<a href="#"><li>Luke</li></a>
+			<a href="#"><li>Contact</li></a>
+		</ul>
+		<div class="handle">Menu</div>
+	</nav>
+	<section>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel dui a leo mollis viverra quis sit amet est. Sed et purus at lacus pretium egestas quis at nunc. Quisque dignissim mattis nisi, ac suscipit felis posuere sit amet. Sed pharetra accumsan ex eu sollicitudin. Sed eros augue, facilisis non neque vitae, venenatis egestas dui. Mauris id libero ut quam lobortis lacinia. Sed gravida aliquet est, vel semper sapien congue tempus. Mauris vehicula bibendum fringilla. Suspendisse nec vulputate nulla. Nulla venenatis eget mauris ac volutpat. Ut aliquet erat quis posuere mattis. Mauris eu rhoncus augue. Fusce at convallis mi. Vestibulum tristique, ex ac tincidunt auctor, justo magna volutpat lectus, ultrices blandit magna augue ac massa. In et malesuada lorem. Mauris interdum placerat consectetur.<br><br>
+
+		Sed et lobortis magna. Vivamus posuere quam gravida sapien rhoncus rutrum. Phasellus eu tincidunt elit, vel ultricies sem. Nullam sem ex, semper vitae rhoncus sit amet, pharetra at velit. Ut neque sapien, euismod eu hendrerit vitae, pulvinar nec nisi. Cras scelerisque iaculis elit nec facilisis. Vivamus id aliquam mauris. In ex metus, sodales et lectus eu, ultrices aliquam sem. Maecenas facilisis aliquam est sed congue.<br><br>
+
+		Pellentesque id felis a tortor rhoncus bibendum. Morbi venenatis ante vel odio sollicitudin, a laoreet odio aliquet. Donec ut porta purus. Morbi dignissim lectus massa, at consequat purus ornare non. Morbi vestibulum dignissim ex. Quisque vel placerat tortor, eu consequat nisl. Sed sed enim ac turpis molestie accumsan vitae sed enim. Maecenas porttitor, orci et vulputate bibendum, neque elit faucibus arcu, at viverra orci dolor sit amet massa.<br><br>
+
+		Ut aliquet ante at libero tincidunt pretium. Nam in nisi suscipit, placerat orci quis, volutpat mauris. Duis vehicula tristique cursus. Nunc ex velit, rhoncus at pulvinar non, molestie ut nunc. Sed eget urna pretium, interdum nisi ac, tristique nisl. Aenean vitae accumsan neque. Praesent cursus viverra quam. Vivamus sed porta lectus. Nulla id arcu vitae tortor commodo hendrerit a eget massa. Fusce et augue mi. Duis est arcu, commodo a consequat id, ultrices quis velit. Etiam non dolor ac quam consequat mollis a molestie arcu. Donec nec orci volutpat, posuere nulla sit amet, posuere ipsum. Suspendisse viverra sagittis ornare.<br><br>
+
+		Donec dui turpis, auctor vel lacus eu, volutpat rhoncus lacus. Nullam in dolor id ligula lobortis ullamcorper. Aliquam efficitur risus non augue auctor, in molestie risus condimentum. Etiam ornare arcu eu justo blandit, at vulputate ex fringilla. Duis finibus vestibulum odio at placerat. Sed convallis nibh ex, et pharetra tortor fermentum sit amet. Fusce semper malesuada ultrices. Sed consectetur turpis iaculis nisl lacinia, eget ultricies mauris varius. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris maximus laoreet arcu, ut bibendum ante commodo quis. Duis sit amet lacus rhoncus nunc semper rhoncus. Quisque commodo, risus ut sollicitudin viverra, risus tellus dignissim sem, et sagittis lacus erat non tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam ac justo tellus.
+	</section>
+<!-- TOGGLE MENU -->
+<script>
+	$('.handle').on('click', function(){
+		$('nav ul').toggleClass('showing');
+	}) 
+</script>
+</body>
+</html>
