@@ -1,0 +1,129 @@
+body{
+	background-color:#f0f0f0;
+	font-family: 'Lato';
+	line-height: 1.5;
+	text-align: justify;
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+}
+a{
+	text-decoration: none;
+}
+.hero_photo{
+	width:100%;
+	height:380px;
+	margin:2% 0;
+	background-image: url('woman.jpg');
+	background-size: cover;
+	border-radius:15px;
+}
+header nav{
+	background-color: #666;
+	height: 50px;
+	border-radius:5px;
+	padding: 0;
+	margin: 0;
+}
+header nav ul{
+	list-style: none;
+	margin: 0 auto;
+}
+header nav ul li{
+	height: 100%;
+	float: left;
+	display: inline;
+}
+header nav ul li:hover{
+	background-color: #CF5C3F;
+	border-radius:5px;
+}
+header nav a:link, a:visited{
+	color:#FFF;
+	display: inline-block;
+	padding: 12px 25px;
+	font-weight: 700;
+}
+.mainContent{
+	line-height:25px;
+	border-radius:5px;
+}
+.content{
+	width:70%;
+	float: left;
+}
+.topContent{
+	background-color: white;
+	border-radius:5px;
+	padding: 3% 5%;
+	margin: 5% 0;
+}
+.post-info{
+	font-style: italic;
+	color:#999;
+	font-size: 90%;
+}
+.sidebar{
+	background-color: #FFF;
+	width:21%;
+	float:left;
+	border-radius:5px;
+	margin:3.5% 0 0 3%;
+	padding: 0.5% 3%;
+}
+.mainFooter{
+	width:100%;
+	float: left;
+	border-radius:5px;
+	background-color: #666;
+	text-align: center;
+	color: white;
+	margin-bottom: 2%;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width:150px) and (max-width: 700px)
+{
+	body{
+	width: 95%;
+	font-size: 95%;
+	}
+	.hero_photo{
+		width:100%;
+	}
+	header nav{
+	height: 185px;
+	}
+	header nav ul{
+	padding-left: 0;
+	}
+	header nav ul li{
+	width:100%;
+	text-align:center;
+	}
+	.mainContent{
+		line-height:25px;
+		border-radius:5px;
+	}
+	.content{
+		width:100%;
+		float: left;
+		margin-top: 2%;
+	}
+	.topContent{
+		margin: 6% 0;
+	}
+	.post-info{
+		font-style: italic;
+		color:#999;
+		font-size: 90%;
+	}
+	.sidebar{
+		width:94%;
+		margin:2% 0;
+		padding: 2% 3%;
+	}
+	.mainFooter{
+		margin-top: 6%;
+}
