@@ -1,0 +1,59 @@
+body{
+	margin:0;
+	background-color: #282828;
+}
+div#topbar{
+	background: -webkit-linear-gradient(#666, #000);
+	background: linear-gradient(#666, #000);
+	height:100px;
+	width: 100%;
+}
+div#topbar > #logo{
+	float:left;
+	margin: 20px 30px;
+	font-size: 50px;
+	font-family: 'Raleway';
+	font-weight: 900;
+	color: #999;
+}
+div#topbar > #sections_btn_holder{
+	padding: 35px;
+}
+div#topbar > #sections_btn_holder > button{
+	font-size: 14px;
+	padding: 6px 16px;
+	font-family: 'Lato';
+	border-radius:5px;
+	outline: none;
+	border: none;
+}
+div#topbar > #sections_panel{
+	position: absolute;
+	height: 0;
+	background:lightgrey;
+	top: 65px;
+	left: 220px;
+	border-radius:0px 0px 8px 8px;
+	overflow: hidden;
+	z-index: 10;
+	transition: height 0.3s linear 0s;
+}
+div#topbar > #sections_panel > div{
+	background: #333;
+	margin: 3px;
+}
+div#topbar > #sections_panel > div > ul{
+	list-style: none;
+	padding:0;
+	margin: 0;
+	text-align: center;
+}
+div#topbar > #sections_panel > div > ul > li{
+	color: lightgrey;
+	padding: 12px 70px;
+	font-family: 'Lato';
+	letter-spacing: 0.5px;
+}
+div#topbar > #sections_panel > div > ul > li:hover{
+	background-color: #FF8C00;
+}
